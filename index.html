@@ -3,11 +3,559 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>League of Justice</title>
+    <title>WillieWonko</title>
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-chocolate" viewBox="0 0 32 32">
+          <title>chocolate</title>
+          <path
+            fill="#fcf1e0"
+            style="fill: var(--color1, #fcf1e0)"
+            d="M3.944 20.076l10.777-17.424 0.64-0.674 8.236 5.491 0.056 3.314 2.010 3.28-8.88 14.077-12.839-8.063z"
+          ></path>
+          <path
+            fill="none"
+            stroke="#fd9222"
+            style="stroke: var(--color2, #fd9222)"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-miterlimit="4"
+            stroke-width="2.6667"
+            d="M21.635 23.88l-14.185-8.864M11.361 8.599l14.186 8.864M10.63 25.864l11.736-19.25M27.176 14.789c-3.040-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.185 8.864 9.454-15.507z"
+          ></path>
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 32 32">
+          <title>facebook</title>
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-miterlimit="4"
+            stroke-width="2"
+            d="M24 2.667h-4c-1.768 0-3.464 0.702-4.714 1.953s-1.953 2.946-1.953 4.714v4h-4v5.333h4v10.667h5.333v-10.667h4l1.333-5.333h-5.333v-4c0-0.354 0.141-0.693 0.391-0.943s0.589-0.391 0.943-0.391h4v-5.333z"
+          ></path>
+        </symbol>
+        <symbol id="icon-instagram-1" viewBox="0 0 32 32">
+          <title>instagram-1</title>
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-miterlimit="4"
+            stroke-width="2"
+            d="M22.667 2.667h-13.333c-3.682 0-6.667 2.985-6.667 6.667v13.333c0 3.682 2.985 6.667 6.667 6.667h13.333c3.682 0 6.667-2.985 6.667-6.667v-13.333c0-3.682-2.985-6.667-6.667-6.667z"
+          ></path>
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-miterlimit="4"
+            stroke-width="2"
+            d="M21.333 15.16c0.165 1.11-0.025 2.243-0.542 3.239s-1.334 1.803-2.336 2.307c-1.002 0.504-2.137 0.68-3.245 0.502s-2.131-0.701-2.924-1.494c-0.793-0.793-1.316-1.816-1.494-2.924s-0.003-2.243 0.502-3.245c0.504-1.002 1.312-1.819 2.308-2.336s2.129-0.706 3.239-0.542c1.132 0.168 2.18 0.695 2.989 1.504s1.337 1.857 1.504 2.989z"
+          ></path>
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-miterlimit="4"
+            stroke-width="2"
+            d="M23.333 8.667h0.013"
+          ></path>
+        </symbol>
+        <symbol id="icon-twitter-1" viewBox="0 0 32 32">
+          <title>twitter-1</title>
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-miterlimit="4"
+            stroke-width="2"
+            d="M30.667 4c-1.277 0.901-2.691 1.589-4.187 2.040-0.803-0.923-1.87-1.578-3.057-1.875s-2.437-0.222-3.58 0.214c-1.143 0.436-2.125 1.213-2.812 2.226s-1.047 2.212-1.031 3.435v1.333c-2.343 0.061-4.665-0.459-6.759-1.513s-4.561-3.563-5.908-5.481c0 0-4.667 12.954 7.333 18.287-2.746 1.864-6.017 2.799-9.333 2.667 12 6.667 26.667 0 26.667-15.333-0.001-0.371-0.037-0.742-0.107-1.107 1.361-1.342 2.321-3.036 2.773-4.893z"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav-list">
+            <div class="logo">
+              <a class="link logo-link" href="./index.html">
+                <span class="simply-italic">simply</span> chocolate
+                <svg class="icon icon-chocolate" width="24" height="24">
+                  <use xlink:href="#icon-chocolate"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="list nav-list">
+              <li class="nav-list-item">
+                <a class="link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="link" href="#how-its-made">How its made?</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="link" href="#chocolate-is-loved"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="list">
+            <li>
+              <a
+                class="link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="icon icon-instagram-1" width="24" height="24">
+                  <use xlink:href="#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="icon icon-facebook" width="24" height="24">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="icon icon-twitter-1" width="24" height="24">
+                  <use xlink:href="#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="containder">
+          <section class="hero section">
+            <div class="container">
+              <h1 class="main-h1">
+                Treat yourself or a loved one to our finest ingredients for a
+                moment of pure delight!
+              </h1>
+              <button type="button">Buy now</button>
+              <a class="link" href="#how-its-made">How its made</a>
+              <a class="link" href="#footer-id">scroll down</a>
+            </div>
+          </section>
+          <section class="section-two">
+            <h2 hidden>description</h2>
+            <ul class="description-list list">
+              <li class="description-list-item">
+                <h3 class="three">Unsurpassed taste</h3>
+                <p class="discription-text">
+                  Crafted with the finest quality cocoa beans and a dedication
+                  to perfection, each bite is a decadent experience that simply
+                  cannot be matched. Savor the richness and complexity of our
+                  Unsurpassed Taste and discover a new level of chocolate bliss.
+                </p>
+              </li>
+              <li class="description-list-item">
+                <h3 class="three">Affordable price</h3>
+                <p class="discription-text">
+                  Indulge in high-quality chocolate without breaking the bank
+                  with Simply Chocolate's selection of affordable treats. Enjoy
+                  mouth-watering truffles and velvety chocolate bars without
+                  sacrificing taste or quality. Browse our selection and indulge
+                  in affordable luxury today.
+                </p>
+              </li>
+              <li class="description-list-item">
+                <h3 class="three">Own production</h3>
+                <p class="discription-text">
+                  We take pride in our own production process, ensuring that
+                  every step is carefully crafted to perfection. From selecting
+                  the finest ingredients to handcrafting each piece, our
+                  attention to detail is evident in every bite.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="section-three">
+            <h2 class="two">
+              IT ALL ADDS UP TO ONE EXCEPTIONAL
+              <span class="taste">TASTE</span> SENSATION
+            </h2>
+            <p>
+              At Simply Chocolate, we believe that the secret to exceptional
+              chocolate is in the details. From the sourcing of the finest
+              ingredients to the careful crafting of each individual piece,
+              every step of our process adds up to one exceptional taste
+              sensation.
+            </p>
+            <ul class="list">
+              <li>
+                <img
+                  src="./images/img-1-min.png"
+                  alt="chocolate crushed="
+                  height="160"
+                  width="214"
+                />
+                <p>MILK CHOCOLATE</p>
+              </li>
+              <li>
+                <img
+                  src="./images/img-2-min.png"
+                  alt="bottle of milk"
+                  width="214"
+                  height="160"
+                />
+                <p>MILK</p>
+              </li>
+              <li>
+                <img
+                  src="./images/img-3-min.png"
+                  alt="nuts in shell"
+                  width="214"
+                  height="160"
+                />
+                <p>NUTS</p>
+              </li>
+              <li>
+                <img
+                  src="./images/img-4-min.png"
+                  alt="chocolate drips"
+                  width="214"
+                  height="160"
+                />
+                <p>SEMI - SWEET CHOCOLATE</p>
+              </li>
+              <li>
+                <img
+                  src="./images/img-5-min.png"
+                  alt="cocoa"
+                  width="214"
+                  height="160"
+                />
+                <p>CACAO</p>
+              </li>
+              <li>
+                <img
+                  src="./images/img-6-min.png"
+                  alt="four raspberries"
+                  width="214"
+                  height="160"
+                />
+                <p>RASPBERRY</p>
+              </li>
+              <li>
+                <img
+                  src="./images/img-7-min.png"
+                  alt="coconut"
+                  width="214"
+                  height="160"
+                />
+                <p>COCONUT OIL</p>
+              </li>
+            </ul>
+          </section>
+          <section class="section-four">
+            <h2 class="two" id="how-its-made">
+              hOW ITS <span class="made"> made?</span>
+            </h2>
+            <img
+              src="./images/image.jpg"
+              alt="men whick chocolate"
+              width="600"
+              height="400"
+            />
+            <div>
+              <b class="bold-text">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </b>
+              <ul class="list how-its-made-list">
+                <li class="how-its-made-list-item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="how-its-made-list-item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="how-its-made-list-item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="how-its-made-list-item">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="how-its-made-list-item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="section-five">
+            <h2 class="two">Our <span class="products">pRODUCTS</span></h2>
+            <ul class="list our-product-list">
+              <li>
+                <img
+                  src="./images/img-1.jpg"
+                  alt="chocolate in and out box"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="three">orange</h3>
+                <p>Dark chocolate</p>
+                <span class="price">45 UAH</span>
+              </li>
+              <li>
+                <img
+                  src="./images/img-2.jpg"
+                  alt="chocolate in and out box"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="three">APPLE&CRANBERRY</h3>
+                <p>Milk chocolate</p>
+                <span class="price">50 UAH</span>
+              </li>
+              <li>
+                <img
+                  src="./images/img-3.jpg"
+                  alt="chocolate in and out box"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="three">lime&sea salt</h3>
+                <p>Dark chocolate</p>
+                <span class="price">66 UAH</span>
+              </li>
+              <li>
+                <img
+                  src="./images/img-4.jpg"
+                  alt="chocolate in and out box"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="three">pineapple</h3>
+                <p>Dark chocolate</p>
+                <span class="price">54 UAH</span>
+              </li>
+              <li>
+                <img
+                  src="./images/img-5.jpg"
+                  alt="chocolate in and out box"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="three">Classic</h3>
+                <p>Milk chocolate</p>
+                <span class="price">45 UAH</span>
+              </li>
+              <li>
+                <img
+                  src="./images/img-6.jpg"
+                  alt="chocolate in and out box"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="three">honey</h3>
+                <p>Milk chocolate</p>
+                <span class="price">50 UAH</span>
+              </li>
+              <li>
+                <img
+                  src="./images/img-7.jpg"
+                  alt="chocolate in and out box"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="three">Roasted fruits</h3>
+                <p>Dark chocolate</p>
+                <span class="price">66 UAH</span>
+              </li>
+              <li>
+                <img
+                  src="./images/img-8.jpg"
+                  alt="chocolate in and out box"
+                  width="230"
+                  height="201"
+                />
+                <h3>Classic</h3>
+                <p>White chocolate</p>
+                <span class="price">54 UAH</span>
+              </li>
+            </ul>
+          </section>
+          <section class="section-six">
+            <h2>tOp Sellers</h2>
+            <ul class="list">
+              <li>
+                <img
+                  src="./images/img-11.jpg"
+                  alt="crushed chocolate whole nut in shell and cofee"
+                />
+                <h3>CHOCOLATE WITH NUTS</h3>
+              </li>
+              <li>
+                <img
+                  src="./images/img-21.jpg"
+                  alt="crushed chocolad with almond inside"
+                  width="368"
+                  height="464"
+                />
+                <h3>CHOCOLATE WITH FRUITS</h3>
+              </li>
+              <li>
+                <img
+                  src="./images/img-31.jpg"
+                  alt="crushed dark chocolate"
+                  width="368"
+                  height="464"
+                />
+                <h3>DARK CHOCOLATE</h3>
+              </li>
+            </ul>
+          </section>
+          <section class="section-eight">
+            <h2 id="chocolate-is-loved">chocolate is loved</h2>
+            <ul class="list">
+              <li>
+                <img src="./images/Ellipse-min.png" alt="chocolate lover one" />
+                <h3>Victoria Dobrzhanska</h3>
+                <p>
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </li>
+              <li>
+                <img
+                  src="./images/Ellipse1-min.png"
+                  alt="chocolate lover two"
+                />
+                <h3>Nazar Babenko</h3>
+                <p>
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </li>
+              <li>
+                <img
+                  src="./images/Ellipse2-min.png"
+                  alt="chocolate lover three"
+                />
+                <h3>Olena Kampusch</h3>
+                <p>
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </li>
+            </ul>
+            <button type="button">Leave a review</button>
+          </section>
+        </div>
+      </main>
+      <footer id="footer-id">
+        <div class="container">
+          <div class="footer-top-part">
+            <p>
+              <span class="chocolate">Chocolate</span> a delicious cure for a
+              bad day
+            </p>
+            <p>Social network</p>
+            <ul class="list">
+              <li>
+                <a
+                  class="link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="icon icon-instagram-1" width="24" height="24">
+                    <use xlink:href="#icon-instagram-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="icon icon-facebook" width="24" height="24">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="icon icon-twitter-1" width="24" height="24">
+                    <use xlink:href="#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p>Contact us</p>
+            <address>
+              <ul class="list">
+                <li>
+                  <a
+                    class="link contact_mail"
+                    href="mailto:simplychoc@gmail.com"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a class="link contact_number" href="tel:+380684439426"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-bottom-part">
+            <nav>
+              <ul class="list nav-list">
+                <li><a class="link" href="./index.html">Home</a></li>
+                <li><a class="link" href="#how-its-made">How its made?</a></li>
+                <li>
+                  <a class="link" href="#chocolate-is-loved"
+                    >Chocolate is loved</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <input
+              type="text"
+              name="inputName"
+              placeholder="Enter your email"
+            />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

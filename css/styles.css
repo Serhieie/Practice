@@ -1,0 +1,15 @@
+:root {
+  --dark: #111111;
+  --light-dark: #1e1823;
+  --grey: #4c4c4c;
+  --orange: #fd9222;
+  --milk: #fcf1e0;
+  --white-milk: #fafafa;
+  --white: #ffffff;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
