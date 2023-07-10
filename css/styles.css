@@ -265,7 +265,6 @@ img {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
   margin-top: 18px;
@@ -411,7 +410,6 @@ img {
 .our-product-list-items p {
   color: rgba(17, 17, 17, 0.7);
   font-size: 12px;
-  font-weight: 400;
   line-height: 14px;
   letter-spacing: -0.24px;
   padding-top: 0;
@@ -456,7 +454,6 @@ img {
 
 .section-six-three {
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.36px;
@@ -471,15 +468,14 @@ img {
 
 .section-seven-list-items {
   flex-basis: calc((100% - 56px) / 3);
-  text-align: center;
   max-width: 360px;
 }
 
 .team-box {
   width: 360px;
+  height: 200px;
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
   border-radius: 15px;
@@ -492,8 +488,6 @@ img {
 .team-box p {
   color: var(--grey);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
   padding: 24px;
@@ -519,7 +513,6 @@ img {
 
 .section-seven-list {
   justify-content: center;
-  margin: 0 auto;
 }
 
 .team-button {
@@ -557,8 +550,6 @@ img {
 .footer-top-part {
   display: flex;
   padding: 50px 32px;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 .social-network-list {
@@ -567,18 +558,14 @@ img {
 }
 
 .social-network-list svg {
-  width: 24px;
-  height: 24px;
   fill: none;
-  margin: 0;
-  padding: 0;
   stroke: var(--white);
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social-network-div,
@@ -594,13 +581,11 @@ img {
 
 .footer-bottom-part {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 24px 32px 50px;
 }
 
 input[name="inputName"] {
-  margin-left: auto; /* Розташування інпуту та кнопки справа */
+  margin-left: auto;
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   background-color: var(--light-dark);
@@ -612,14 +597,10 @@ input[name="inputName"] {
 
 .address-list a {
   color: var(--white);
-  text-align: center;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
-  margin: 0;
-  padding: 0;
 }
 
 .address-list a:hover {
@@ -628,12 +609,8 @@ input[name="inputName"] {
 
 .social-network-text,
 .address-text {
-  padding: 0;
   margin: 0;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
 }
 
 .footer-button {
@@ -641,9 +618,7 @@ input[name="inputName"] {
   border-radius: 100px;
   color: var(--white);
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   padding: 17px 40px;
   border: none;
 }
@@ -655,10 +630,6 @@ input[name="inputName"] {
   cursor: pointer;
 }
 
-.footer-container {
-  position: relative;
-}
-
 .nav-list-footer {
   display: flex;
   gap: 24px;
@@ -667,8 +638,6 @@ input[name="inputName"] {
 .nav-list-footer a {
   color: #fff;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
   letter-spacing: -0.28px;
 }
 
@@ -690,8 +659,4 @@ input[name="inputName"] {
 .nav-list a:focus:not(.logo-link),
 .nav-list a:hover:not(.logo-link) {
   color: var(--orange);
-}
-
-.contact_mail a {
-  margin-bottom: 4px;
 }
