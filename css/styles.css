@@ -38,6 +38,9 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -93,7 +96,7 @@ img {
 
 .header .container-header {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
   display: flex;
   background-color: var(--white-milk);
 }
@@ -126,6 +129,11 @@ img {
   margin: 0;
 }
 
+.icon-chocolate {
+  stroke: var(--orange);
+  fill: var(--white-milk);
+}
+
 .nav-list {
   gap: 24px;
   font-size: 14px;
@@ -140,6 +148,33 @@ img {
 
 .nav-list a {
   color: var(--dark);
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  padding-bottom: 8px;
+}
+
+.nav-link::after {
+  content: "";
+  background-color: var(--orange);
+  bottom: -2px;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  opacity: 0;
+  display: block;
+  transform: scaleX(0);
+  transition: opacity 250ms linear, transform 300ms linear;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .social-media-list {
@@ -227,19 +262,28 @@ img {
   font-weight: 500;
   letter-spacing: -0.42px;
   align-items: baseline;
+  transition: color 250ms linear;
 }
 
 .hero-link-two:hover {
   color: var(--orange);
 }
 
-.hero-link-two svg {
-  fill: var(--white);
+.hero-link-two .scroll-down {
+  fill: var(--orange);
+  stroke: var(--white);
+  stroke-width: 0.3px;
   vertical-align: middle;
+  background-color: var(--white);
+  border-radius: 50%;
+
+  transition: stroke 250ms linear, fill 250ms linear, background-color 250ms linear;
 }
 
-.hero-link-two svg:hover {
-  stroke: #fd9222;
+.hero-link-two:hover .scroll-down {
+  fill: var(--white);
+  stroke: var(--white);
+  background-color: var(--orange);
 }
 
 .section-two {
@@ -567,7 +611,6 @@ img {
 }
 
 .social-network-list svg {
-  fill: none;
   stroke: var(--white);
 }
 
