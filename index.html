@@ -683,20 +683,25 @@
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
-      <div class="modal">
+      <div class="modal is-hidden">
         <p class="modal-text">
           LEAVE A REVIEW ABOUT <span class="orange-color">OUR CHOCOLATE </span>
         </p>
-        <form class="js-speaker-form">
           <div class="modal-form">
+            <form class="js-speaker-form">
             <label class="form-input-label" for="name">Name</label>
-            <input type="text" class="form-input input-user" id="name" />
+            <input
+              type="text"
+              class="form-input input-user"
+              id="name"
+              autocomplete="name"
+            />
             <label class="form-input-label" for="email">Email</label>
-            <input class="form-input" type="email" id="email" />
+            <input class="form-input" type="email" id="email" autocomplete="email" placeholder="&#9993;" />
             <label class="form-input-label" for="tel">Phone number</label>
-            <input class="form-input" type="tel" id="tel" />
+            <input class="form-input" type="tel" id="tel" autocomplete="tel" placeholder="&#9990;"/>
             <label class="form-input-label" for="textarea">Comment</label>
-            <textarea class="comment" name="comment" id="textarea" rows="8"></textarea>
+            <textarea class="comment" name="comment" id="textarea" rows="8" placeholder="Enter text"></textarea>
 
             <div class="privat-policy-div">
               <input class="form-checkbox" type="checkbox" />
@@ -716,16 +721,5 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script>
-      (() => {
-        document.querySelector(".js-speaker-form").addEventListener("submit", (e) => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`${name}: ${value}`)
-          );
-        });
-      })();
-    </script>
   </body>
 </html>
