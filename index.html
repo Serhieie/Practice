@@ -75,11 +75,14 @@
             </a>
           </li>
         </ul>
+        <button class="mobile-menu-button" type="button"><svg class="icon icon-menu-mobile" width="28" height="28">
+                <use xlink:href="./images/sprite.svg#icon-menu-mobile"></use>
+              </svg></button>
       </div>
     </header>
     <main>
       <section class="hero section">
-        <div class="container1">
+        <div class="container hero-container">
           <h1 class="main-h1">
             Treat yourself or a loved one to our finest ingredients for a moment of pure
             delight!
@@ -372,15 +375,16 @@
         </div>
       </section>
       <section class="section-four section">
+        <div class="container">
         <h2 class="two" id="how-its-made">
           hOW ITS <span class="orange-color"> made?</span>
         </h2>
-        <div class="container container-section-four">
+        <div class="container-section-four">
           <div class="section-four-video">
             <svg class="icon icon-play" width="44" height="44">
               <use xlink:href="./images/sprite.svg#icon-play"></use>
             </svg>
-            <img
+            <img class="how-its-made-video"
               src="./images/image.jpg"
               alt="men whick chocolate"
               width="600"
@@ -412,6 +416,7 @@
               </li>
             </ul>
           </div>
+        </div>
         </div>
       </section>
       <section class="section-five section">
@@ -514,7 +519,7 @@
           <h2 class="two"><span class="orange-color">tOp</span> Sellers</h2>
           <ul class="list top-sellers-list">
             <li class="top-sellers-list-items">
-              <img
+              <img class="top-sellers-list-items-img"
                 src="./images/img-11.jpg"
                 alt="crushed chocolate whole nut in shell and cofee"
                 width="368"
@@ -523,7 +528,7 @@
               <h3 class="section-six-three">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="top-sellers-list-items">
-              <img
+              <img class="top-sellers-list-items-img"
                 src="./images/img-21.jpg"
                 alt="crushed chocolad with almond inside"
                 width="368"
@@ -532,7 +537,7 @@
               <h3 class="section-six-three">CHOCOLATE WITH FRUITS</h3>
             </li>
             <li class="top-sellers-list-items">
-              <img
+              <img class="top-sellers-list-items-img"
                 src="./images/img-31.jpg"
                 alt="crushed dark chocolate"
                 width="368"
@@ -599,12 +604,12 @@
       </section>
     </main>
     <footer id="footer-id">
-      <div class="footer-container">
+      <div class="footer-container container">
         <div class="footer-top-part">
           <p class="footer-big-text">
             <span class="orange-color">Chocolate</span> a delicious cure for a bad day
           </p>
-
+          <div class="social-revers-div">
           <div class="social-network-div">
             <p class="social-network-text">Social network</p>
             <ul class="list social-network-list">
@@ -661,9 +666,10 @@
             </address>
           </div>
         </div>
+        </div>
         <hr class="divider-line" />
         <div class="footer-bottom-part">
-          <nav class="nav-list">
+          <nav class="nav-list-footer">
             <ul class="list nav-list-footer">
               <li><a class="link" href="./index.html">Home</a></li>
               <li><a class="link" href="#how-its-made">How its made?</a></li>
@@ -672,6 +678,7 @@
               </li>
             </ul>
           </nav>
+          <div class="footer-input-button-div">
           <input
             class="footer-input"
             type="text"
@@ -679,6 +686,7 @@
             placeholder="Enter your email"
           />
           <button class="footer-button" type="button">Subscribe</button>
+          </div>
         </div>
       </div>
     </footer>
@@ -689,27 +697,45 @@
         </p>
           <div class="modal-form">
             <form class="js-speaker-form">
-            <label class="form-input-label" for="name">Name</label>
+<label class="custome-input">
             <input
               type="text"
               class="form-input input-user"
-              id="name"
-              autocomplete="name"
+              autocomplete="name" placeholder=" "
             />
-            <label class="form-input-label" for="email">Email</label>
-            <input class="form-input" type="email" id="email" autocomplete="email" placeholder="&#9993;" />
-            <label class="form-input-label" for="tel">Phone number</label>
-            <input class="form-input" type="tel" id="tel" autocomplete="tel" placeholder="&#9990;"/>
-            <label class="form-input-label" for="textarea">Comment</label>
-            <textarea class="comment" name="comment" id="textarea" rows="8" placeholder="Enter text"></textarea>
-
-            <div class="privat-policy-div">
+            <span class="form-input-label" for="name">Name</span>
+            <svg class="form-icon icon-user" width="24" height="24">
+                <use xlink:href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </label>
+            <label class="custome-input">
+            <input class="form-input" type="email" autocomplete="email" placeholder=" "/>
+            <span class="form-input-label">Email</span>
+            <svg class="form-icon icon-mail" width="24" height="24">
+                <use xlink:href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </label>
+            <label class="custome-input">
+            <input class="form-input input" type="tel" autocomplete="tel" placeholder=" " />
+            <span class="form-input-label label-three" for="tel">Phone number</span>
+            <svg class="form-icon icon-phone" width="24" height="24">
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label>
+            <label class="comment-input-field">
+            <textarea class="comment" name="comment" rows="8" placeholder="Enter text"></textarea>
+            <span class="comment-span">Comment</span>
+            </label>
+            <label class="privat-policy-label">
               <input class="form-checkbox" type="checkbox" />
+              <span class="privat-policy-span"></span>
               <p class="privat-policy-text">
                 I accept the terms and conditions of the
                 <a href="./index.html" class="privat-policy">Privat Policy</a>
               </p>
-            </div>
+            </label>
+
           </div>
           <button type="submit" class="modal-submit-button">Send</button>
         </form>

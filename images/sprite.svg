@@ -32,11 +32,11 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M5.333 5.333h21.333c1.467 0 2.667 1.2 2.667 2.667v16c0 1.467-1.2 2.667-2.667 2.667h-21.333c-1.467 0-2.667-1.2-2.667-2.667v-16c0-1.467 1.2-2.667 2.667-2.667z"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M29.333 8l-13.333 9.333-13.333-9.333"></path>
 </symbol>
-<symbol id="icon-menu-03-1" viewBox="0 0 32 32">
+<symbol id="icon-menu-mobile" viewBox="0 0 32 32">
 <title>menu-03-1</title>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M4 16h24M4 8h24M4 24h24"></path>
 </symbol>
-<symbol id="icon-menu-03" viewBox="0 0 32 32">
+<symbol id="icon-menu" viewBox="0 0 32 32">
 <title>menu-03</title>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M4 16h24M4 8h24M4 24h24"></path>
 </symbol>
@@ -49,9 +49,9 @@
 <path fill="#f5f4f4" style="fill: var(--color5, #f5f4f4)" d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color6, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z"></path>
 </symbol>
-<symbol id="icon-Property-1Default-1" viewBox="0 0 32 32">
+<symbol id="icon-checkmark" viewBox="0 0 32 32">
 <title>Property-1Default-1</title>
-<path fill="#fd9222" style="fill: var(--color2, #fd9222)" d="M9.6 0h12.8c5.302 0 9.6 4.298 9.6 9.6v12.8c0 5.302-4.298 9.6-9.6 9.6h-12.8c-5.302 0-9.6-4.298-9.6-9.6v-12.8c0-5.302 4.298-9.6 9.6-9.6z"></path>
+<path d="M9.6 0h12.8c5.302 0 9.6 4.298 9.6 9.6v12.8c0 5.302-4.298 9.6-9.6 9.6h-12.8c-5.302 0-9.6-4.298-9.6-9.6v-12.8c0-5.302 4.298-9.6 9.6-9.6z"></path>
 <path fill="#fff" style="fill: var(--color6, #fff)" d="M14.318 23.607c0.697 0 1.225-0.268 1.582-0.803l7.724-11.64c0.128-0.19 0.223-0.377 0.285-0.561 0.061-0.19 0.092-0.371 0.092-0.544 0-0.48-0.167-0.876-0.502-1.188-0.329-0.318-0.736-0.477-1.222-0.477-0.335 0-0.619 0.067-0.854 0.201-0.229 0.128-0.446 0.351-0.653 0.669l-6.485 10.184-3.247-3.891c-0.351-0.407-0.792-0.611-1.322-0.611-0.497 0-0.907 0.159-1.23 0.477s-0.485 0.717-0.485 1.197c0 0.218 0.033 0.424 0.1 0.619 0.073 0.19 0.204 0.388 0.393 0.594l4.31 5.080c0.396 0.463 0.901 0.695 1.515 0.695z"></path>
 </symbol>
 <symbol id="icon-Property-1Default" viewBox="0 0 32 32">
