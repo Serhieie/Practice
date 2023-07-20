@@ -9,14 +9,13 @@
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 439px) {
   .container {
-    width: 390px;
+    width: 440px;
   }
 }
 
@@ -26,9 +25,9 @@
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1165px) {
   .container {
-    width: 1200px;
+    width: 1166px;
   }
 }
 
@@ -281,6 +280,7 @@ img {
 
 section.hero {
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .hero-container {
@@ -386,6 +386,9 @@ section.hero {
 }
 
 @media screen and (min-width: 767px) {
+  section.hero {
+    margin: 0 auto;
+  }
   .hero-container {
     width: 704px;
     height: 890px;
@@ -463,7 +466,6 @@ section.hero {
   background-color: var(--dark);
   color: var(--white);
   margin: 0 auto;
-  margin-top: 80px;
   padding: 50px;
 }
 
@@ -1620,12 +1622,12 @@ input[name="inputName"] {
 
 .form-checkbox:checked + .privat-policy-span {
   stroke: var(--white-milk);
-  background-color: var(--orange);
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
   border: none;
+  z-index: 1;
 }
 
 .form-input:focus + .form-input-label,
