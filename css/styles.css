@@ -14,9 +14,9 @@
   padding: 0 15px;
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 420px) {
   .container {
-    width: 480px;
+    width: 390px;
   }
 }
 
@@ -99,11 +99,15 @@ img {
   padding-top: 80px;
 }
 
+/* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */
+
 .header .container-header {
   display: flex;
+  width: 100%;
   padding-top: 24px;
   padding-bottom: 20px;
   background-color: var(--white-milk);
+  align-items: center;
 }
 
 .logo-link {
@@ -112,10 +116,13 @@ img {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.42px;
-  margin-right: 4px;
+  margin-right: 5px;
+  margin-left: 0;
+  vertical-align: middle;
 }
 
 .icon-chocolate {
+  vertical-align: middle;
   padding-left: 4px;
 }
 
@@ -196,7 +203,8 @@ img {
   position: absolute;
   border: none;
   background-color: var(--white-milk);
-  left: 355px;
+  top: 15px;
+  right: 15px;
 }
 
 .icon-menu-mobile {
@@ -204,16 +212,6 @@ img {
 }
 
 /* HEADER @Media */ /* HEADER @Media */ /* HEADER @Media */ /* HEADER @Media */ /* HEADER @Media */ /* HEADER @Media */
-
-@media screen and (min-width: 767px) {
-  .section {
-    padding-bottom: 40px;
-  }
-
-  .section-three {
-    padding-top: 40px;
-  }
-}
 
 @media screen and (min-width: 1199px) {
   .logo {
@@ -251,10 +249,12 @@ img {
   .nav-list {
     display: flex;
     padding-right: 48px;
+    margin: 0 auto;
   }
 
   .social-media-list {
     display: flex;
+    margin: 0 auto;
   }
 
   .mobile-menu-button {
@@ -279,24 +279,25 @@ img {
 }
 /* Section one HERO */ /* Section one HERO */ /* Section one HERO */ /* Section one HERO */ /* Section one HERO */ /* Section one HERO */
 
-section .hero {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+section.hero {
+  margin: 0 auto;
 }
 
 .hero-container {
-  width: 335px;
+  width: 100%;
   height: 621px;
   border-radius: 30px;
   background: var(--grey);
   padding: 15px;
   padding-top: 365px;
-  margin: 0 auto;
   background-image: url(../images/chocolate-main.jpg);
   background-position-x: -65%;
+  background-size: cover;
   justify-content: center;
+  align-items: center;
   align-content: center;
+  align-self: center;
+  margin: 0 auto;
 }
 
 .main-h1 {
@@ -318,6 +319,7 @@ section .hero {
   border: none;
   margin: 0;
   margin-right: 14px;
+  margin-bottom: 32px;
   transition: background-color 250ms linear, color 250ms linear;
 }
 
@@ -352,6 +354,7 @@ section .hero {
   line-height: 1.16;
   letter-spacing: 0.03em;
   transition: color 250ms linear;
+  vertical-align: middle;
 }
 
 .hero-link-two:hover {
@@ -359,10 +362,10 @@ section .hero {
 }
 
 .hero-link-two .scroll-down {
-  margin-top: 32px;
   fill: var(--orange);
   background-color: var(--white);
   border-radius: 50%;
+  vertical-align: middle;
 
   transition: stroke 250ms linear, fill 250ms linear, background-color 250ms linear;
 }
@@ -371,13 +374,6 @@ section .hero {
   fill: var(--white);
   stroke: var(--white);
   background-color: var(--orange);
-}
-
-.section-two {
-  background-color: var(--dark);
-  color: var(--white);
-  margin-top: 80px;
-  padding: 50px;
 }
 
 /* Section one HERO @media */ /* Section one HERO @media */ /* Section one HERO @media */ /* Section one HERO @media */
@@ -407,6 +403,7 @@ section .hero {
   }
   .hero-button {
     padding: 14px 40px;
+    margin-bottom: 0;
   }
 
   .hero-link-one {
@@ -431,6 +428,7 @@ section .hero {
     background-size: cover;
     margin: 0 auto;
   }
+
   .main-h1 {
     width: 484px;
     color: var(--white);
@@ -460,6 +458,14 @@ section .hero {
 }
 
 /* Section 2 */ /* Section 2 */ /* Section 2 */ /* Section 2 */ /* Section 2 */ /* Section 2 */ /* Section 2 */ /* Section 3 */ /* Section 3 */
+
+.section-two {
+  background-color: var(--dark);
+  color: var(--white);
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 50px;
+}
 
 .description-list {
   display: flex;
@@ -1305,7 +1311,7 @@ input[name="inputName"] {
     font-weight: 500;
     line-height: 34px;
     letter-spacing: -0.56px;
-    margin-right: 96px;
+    margin-right: auto;
   }
   .footer-top-part {
     display: flex;
@@ -1322,7 +1328,6 @@ input[name="inputName"] {
     margin: 0;
   }
   .social-network-div {
-    margin-left: auto;
     margin-right: 50px;
     margin: 0;
   }
@@ -1365,6 +1370,7 @@ input[name="inputName"] {
     gap: 16px;
     margin: 0;
     padding: 0;
+    margin-right: auto;
   }
 }
 
