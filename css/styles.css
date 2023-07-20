@@ -14,7 +14,7 @@
   padding: 0 15px;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (max-width: 380px) {
   .container {
     width: 390px;
   }
@@ -1052,10 +1052,11 @@ section.hero {
 .section-seven-list-items {
   max-width: 335px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .team-box {
-  width: 360px;
+  width: 335px;
   height: 200px;
   text-align: center;
   font-size: 14px;
@@ -1089,7 +1090,7 @@ section.hero {
 
 .section-seven-list-items-img {
   padding: 0;
-  margin: 0 0 -40px 136px;
+  margin: 0 0 -40px 128px;
   max-width: 80px;
   max-height: 80px;
 }
@@ -1134,8 +1135,15 @@ section.hero {
     flex-basis: calc((100% - 16px) / 2);
   }
 
+  .team-box {
+    width: 344px;
+  }
+
   .section-seven-list-items:not(:last-child) {
     display: list-item;
+  }
+  .section-seven-list-items-img {
+    margin: 0 0 -40px 136px;
   }
 }
 
@@ -1151,6 +1159,10 @@ section.hero {
     flex-basis: calc((100% - 56px) / 3);
     max-width: 360px;
     margin: 0 auto;
+  }
+
+  .team-box {
+    width: 360px;
   }
 }
 
