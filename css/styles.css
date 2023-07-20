@@ -1619,6 +1619,7 @@ input[name="inputName"] {
 }
 
 .form-checkbox:checked + .privat-policy-span {
+  stroke: var(--white-milk);
   background-color: var(--orange);
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
