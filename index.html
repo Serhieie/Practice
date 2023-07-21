@@ -28,7 +28,7 @@
               </svg>
             </a>
           </div>
-          <ul class="list nav-list">
+          <!-- <ul class="list nav-list">
             <li class="nav-list-item">
               <a class="link nav-link" href="./index.html">Home</a>
             </li>
@@ -39,8 +39,7 @@
               <a class="link nav-link" href="#chocolate-is-loved">Chocolate is loved</a>
             </li>
           </ul>
-        </nav>
-        <ul class="list social-media-list">
+          <ul class="list social-media-list">
           <li>
             <a
               class="link"
@@ -74,10 +73,82 @@
               </svg>
             </a>
           </li>
-        </ul>
-        <button class="mobile-menu-button" type="button"><svg class="icon icon-menu-mobile" width="28" height="28">
-                <use xlink:href="./images/sprite.svg#icon-menu-mobile"></use>
-              </svg></button>
+        </ul> -->
+          <button
+            data-menu-button
+            class="mobile-menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg
+              class="icon icon-menu-mobile"
+              width="28"
+              height="28"
+              aria-label="Mobile menu switcher"
+            >
+              <use class="icon-cross" xlink:href="./images/sprite.svg#icon-x-close"></use>
+              <use
+                class="icon-menu"
+                xlink:href="./images/sprite.svg#icon-menu-mobile"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation-wrapper">
+              <ul class="list nav-list">
+                <li class="nav-list-item">
+                  <a class="link nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="link nav-link" href="#how-its-made">How its made?</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="link nav-link" href="#chocolate-is-loved"
+                    >Chocolate is loved</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="social-wrapper">
+              <ul class="list social-media-list">
+                <li>
+                  <a
+                    class="link"
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="icon" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-instagram-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="link"
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="icon icon-facebook" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="link"
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="icon icon-twitter-1" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -376,47 +447,58 @@
       </section>
       <section class="section-four section">
         <div class="container">
-        <h2 class="two" id="how-its-made">
-          hOW ITS <span class="orange-color"> made?</span>
-        </h2>
-        <div class="container-section-four">
-          <div class="section-four-video">
-            <svg class="icon icon-play" width="44" height="44">
-              <use xlink:href="./images/sprite.svg#icon-play"></use>
-            </svg>
-            <img class="how-its-made-video"
-              src="./images/image.jpg"
-              alt="men whick chocolate"
-              width="600"
-              height="400"
-            />
+          <h2 class="two" id="how-its-made">
+            hOW ITS <span class="orange-color"> made?</span>
+          </h2>
+          <div class="container-section-four">
+            <div class="section-four-video">
+              <svg class="icon icon-play" width="44" height="44">
+                <use xlink:href="./images/sprite.svg#icon-play"></use>
+              </svg>
+
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-images/pastry-mobile-x1.jpg 1x,
+                    ./adaptive-images/pastry-mobile-x2.jpg 2x
+                  "
+                  media=" (max-width: 767px)"
+                />
+                <img
+                  class="how-its-made-video"
+                  src="./images/image.jpg"
+                  alt="men whick chocolate"
+                  width="600"
+                  height="400"
+                />
+              </picture>
+            </div>
+            <div class="section-four-diplay-div">
+              <b class="bold-text">
+                Try our chocolates today and discover the perfect balance of flavor
+              </b>
+              <ul class="how-its-made-list">
+                <li class="how-its-made-list-item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add sugar and
+                  cocoa powder.
+                </li>
+                <li class="how-its-made-list-item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="how-its-made-list-item">
+                  "Mix" the milk mixture and already liquid butter. Mix thoroughly with a
+                  silicone spatula so that the mass becomes uniform and silky.
+                </li>
+                <li class="how-its-made-list-item">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="how-its-made-list-item">
+                  Pour the chocolate into special containers (can be replaced with ice
+                  molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="section-four-diplay-div">
-            <b class="bold-text">
-              Try our chocolates today and discover the perfect balance of flavor
-            </b>
-            <ul class="how-its-made-list">
-              <li class="how-its-made-list-item">
-                Heat the milk in a saucepan without bringing it to a boil. Add sugar and
-                cocoa powder.
-              </li>
-              <li class="how-its-made-list-item">
-                At the same time, prepare a water bath. Melt the butter on it.
-              </li>
-              <li class="how-its-made-list-item">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly with a
-                silicone spatula so that the mass becomes uniform and silky.
-              </li>
-              <li class="how-its-made-list-item">
-                Heat the mixture over low heat, letting it barely boil.
-              </li>
-              <li class="how-its-made-list-item">
-                Pour the chocolate into special containers (can be replaced with ice
-                molds). Allow to cool and harden.
-              </li>
-            </ul>
-          </div>
-        </div>
         </div>
       </section>
       <section class="section-five section">
@@ -519,7 +601,8 @@
           <h2 class="two"><span class="orange-color">tOp</span> Sellers</h2>
           <ul class="list top-sellers-list">
             <li class="top-sellers-list-items">
-              <img class="top-sellers-list-items-img"
+              <img
+                class="top-sellers-list-items-img"
                 src="./images/img-11.jpg"
                 alt="crushed chocolate whole nut in shell and cofee"
                 width="368"
@@ -528,7 +611,8 @@
               <h3 class="section-six-three">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="top-sellers-list-items">
-              <img class="top-sellers-list-items-img"
+              <img
+                class="top-sellers-list-items-img"
                 src="./images/img-21.jpg"
                 alt="crushed chocolad with almond inside"
                 width="368"
@@ -537,7 +621,8 @@
               <h3 class="section-six-three">CHOCOLATE WITH FRUITS</h3>
             </li>
             <li class="top-sellers-list-items">
-              <img class="top-sellers-list-items-img"
+              <img
+                class="top-sellers-list-items-img"
                 src="./images/img-31.jpg"
                 alt="crushed dark chocolate"
                 width="368"
@@ -610,62 +695,62 @@
             <span class="orange-color">Chocolate</span> a delicious cure for a bad day
           </p>
           <div class="social-revers-div">
-          <div class="social-network-div">
-            <p class="social-network-text">Social network</p>
-            <ul class="list social-network-list">
-              <li>
-                <a
-                  class="link"
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><svg class="icon icon-instagram-1" width="24" height="24">
-                    <use xlink:href="./images/sprite.svg#icon-instagram-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="link"
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><svg class="icon icon-facebook" width="24" height="24">
-                    <use xlink:href="./images/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="link"
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><svg class="icon icon-twitter-1" width="24" height="24">
-                    <use xlink:href="./images/sprite.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="address-div">
-            <p class="address-text">Contact us</p>
-            <address>
-              <ul class="list address-list">
+            <div class="social-network-div">
+              <p class="social-network-text">Social network</p>
+              <ul class="list social-network-list">
                 <li>
-                  <a class="link contact_mail" href="mailto:simplychoc@gmail.com"
-                    >simplychoc@gmail.com</a
-                  >
+                  <a
+                    class="link"
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="icon icon-instagram-1" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-instagram-1"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
-                  <a class="link contact_number" href="tel:+380684439426"
-                    >+380 (68) 443-94-26</a
-                  >
+                  <a
+                    class="link"
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="icon icon-facebook" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="link"
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="icon icon-twitter-1" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
+            <div class="address-div">
+              <p class="address-text">Contact us</p>
+              <address>
+                <ul class="list address-list">
+                  <li>
+                    <a class="link contact_mail" href="mailto:simplychoc@gmail.com"
+                      >simplychoc@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link contact_number" href="tel:+380684439426"
+                      >+380 (68) 443-94-26</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
           </div>
-        </div>
         </div>
         <hr class="divider-line" />
         <div class="footer-bottom-part">
@@ -679,13 +764,13 @@
             </ul>
           </nav>
           <div class="footer-input-button-div">
-          <input
-            class="footer-input"
-            type="text"
-            name="inputName"
-            placeholder="Enter your email"
-          />
-          <button class="footer-button" type="button">Subscribe</button>
+            <input
+              class="footer-input"
+              type="text"
+              name="inputName"
+              placeholder="Enter your email"
+            />
+            <button class="footer-button" type="button">Subscribe</button>
           </div>
         </div>
       </div>
@@ -695,50 +780,68 @@
         <p class="modal-text">
           LEAVE A REVIEW ABOUT <span class="orange-color">OUR CHOCOLATE </span>
         </p>
-          <div class="modal-form">
-            <form class="js-speaker-form">
-<label class="custome-input">
-            <input
-              type="text"
-              class="form-input input-user"
-              autocomplete="name" placeholder=" "
-            />
-            <span class="form-input-label" for="name">Name</span>
-            <svg class="form-icon icon-user" width="24" height="24">
+        <div class="modal-form">
+          <form class="js-speaker-form">
+            <label class="custome-input">
+              <input
+                type="text"
+                class="form-input input-user"
+                autocomplete="name"
+                placeholder=" "
+              />
+              <span class="form-input-label">Name</span>
+              <svg class="form-icon icon-user" width="24" height="24">
                 <use xlink:href="./images/sprite.svg#icon-user"></use>
               </svg>
             </label>
             <label class="custome-input">
-            <input class="form-input" type="email" autocomplete="email" placeholder=" "/>
-            <span class="form-input-label">Email</span>
-            <svg class="form-icon icon-mail" width="24" height="24">
+              <input
+                class="form-input"
+                type="email"
+                autocomplete="email"
+                placeholder=" "
+              />
+              <span class="form-input-label">Email</span>
+              <svg class="form-icon icon-mail" width="24" height="24">
                 <use xlink:href="./images/sprite.svg#icon-mail"></use>
               </svg>
             </label>
             <label class="custome-input">
-            <input class="form-input input" type="tel" autocomplete="tel" placeholder=" " />
-            <span class="form-input-label label-three" for="tel">Phone number</span>
-            <svg class="form-icon icon-phone" width="24" height="24">
+              <input
+                class="form-input input"
+                type="tel"
+                autocomplete="tel"
+                placeholder=" "
+              />
+              <span class="form-input-label label-three">Phone number</span>
+              <svg class="form-icon icon-phone" width="24" height="24">
                 <use xlink:href="./images/sprite.svg#icon-phone"></use>
               </svg>
             </label>
-            <label>
             <label class="comment-input-field">
-            <textarea class="comment" name="comment" rows="8" placeholder="Enter text"></textarea>
-            <span class="comment-span">Comment</span>
+              <textarea
+                class="comment"
+                name="comment"
+                rows="8"
+                placeholder="Enter text"
+              ></textarea>
+              <span class="comment-span">Comment</span>
             </label>
-            <label class="privat-policy-label">
+            <div class="privat-policy-label">
               <input class="form-checkbox" type="checkbox" />
-              <span class="privat-policy-span"></span>
+              <span class="privat-policy-span">
+                <!-- <svg class="icon-checkbox-svg" width="20" height="20">
+                  <use xlink:href="./images/sprite.svg#icon-checkbox"></use>
+                </svg> -->
+              </span>
               <p class="privat-policy-text">
                 I accept the terms and conditions of the
                 <a href="./index.html" class="privat-policy">Privat Policy</a>
               </p>
-            </label>
-
-          </div>
-          <button type="submit" class="modal-submit-button">Send</button>
-        </form>
+            </div>
+            <button type="submit" class="modal-submit-button">Send</button>
+          </form>
+        </div>
         <button data-modal-close class="modal-btn" type="button">
           <svg class="icon icon-x" width="24" height="24">
             <use xlink:href="./images/sprite.svg#icon-x-close"></use>
@@ -747,5 +850,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
