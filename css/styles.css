@@ -1658,7 +1658,7 @@ input[name="inputName"] {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .modal-form {
@@ -1726,13 +1726,13 @@ input[name="inputName"] {
   height: 91px;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .comment-span {
   position: absolute;
   left: 35px;
-  bottom: 236px;
+  bottom: 246px;
   color: rgba(64, 64, 64, 0.3);
   font-size: 14px;
   font-weight: 400;
@@ -1758,6 +1758,7 @@ input[name="inputName"] {
 
 .privat-policy {
   color: var(--orange);
+  margin-left: 4px;
 }
 
 .privat-policy-label {
@@ -1767,6 +1768,16 @@ input[name="inputName"] {
 }
 
 .privat-policy-text {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  width: 100%;
+}
+
+.privat-policy-text-div {
+  margin-left: 30px;
+}
+
+/* .privat-policy-text {
   position: relative;
   left: 10px;
   width: 215px;
@@ -1799,9 +1810,9 @@ input[name="inputName"] {
   border: none;
   fill: var(--orange);
   stroke: var(--white);
-}
+} */
 
-.privat-policy-span::before {
+/* .privat-policy-span::before {
   position: absolute;
   display: flex;
   content: "";
@@ -1813,7 +1824,8 @@ input[name="inputName"] {
   pointer-events: none;
   flex-shrink: 0;
 }
-*/ .form-checkbox:checked + .privat-policy-span::before {
+*/
+/* .form-checkbox:checked + .privat-policy-span::before {
   background-image: url(../images/check.svg);
   stroke: var(--white);
   background-color: var(--orange);
@@ -1822,14 +1834,16 @@ input[name="inputName"] {
   background-size: contain;
   background-origin: border-box;
   border: none;
-}
+} */
 
 .icon-checkbox-svg {
-  display: ;
+  position: absolute;
   border: 1px solid rgba(17, 17, 17, 0.14);
   border-radius: 6px;
   stroke: transparent;
   fill: transparent;
+  left: 16%;
+  top: 79%;
 }
 
 .form-checkbox:checked + .icon-checkbox-svg {
@@ -1839,7 +1853,7 @@ input[name="inputName"] {
 }
 
 .form-checkbox {
-  opacity: 1;
+  opacity: 0;
 }
 
 .form-input:focus + .form-input-label,
@@ -1873,7 +1887,7 @@ input[name="inputName"] {
   padding: 12px 28px;
   border: none;
   cursor: pointer;
-  margin-top: 25px;
+  margin-top: 15px;
   transition: color 250ms linear, background-color 250ms linear;
 }
 
@@ -1927,7 +1941,7 @@ input[name="inputName"] {
     padding: 22px 24px;
     height: 138px;
     margin-top: 30px;
-    margin-bottom: 16px;
+    margin-bottom: 28px;
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
   }
@@ -1942,16 +1956,13 @@ input[name="inputName"] {
     font-size: 18px;
   }
 
-  .privat-policy-text::before .privat-policy-label {
+  /* .privat-policy-text::before .privat-policy-label {
     display: flex;
-  }
+  } */
 
-  .privat-policy-text {
-    display: flex;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    margin-left: 12px;
-    width: 100%;
+  .icon-checkbox-svg {
+    left: 9%;
+    top: 79%;
   }
 
   .form-input:focus + .form-input-label,
@@ -1967,6 +1978,7 @@ input[name="inputName"] {
   }
   .modal-submit-button {
     padding: 17px 40px;
+    margin-top: 40px;
   }
 
   .form-input {
@@ -1983,6 +1995,10 @@ input[name="inputName"] {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-bottom: 35px;
+  }
+
+  .privat-policy-text {
+    font-size: 14px;
   }
 
   .modal-btn {
@@ -2016,5 +2032,15 @@ input[name="inputName"] {
   .comment-span {
     bottom: 308px;
     left: 64px;
+  }
+
+  .icon-checkbox-svg {
+    left: 9%;
+    top: 83%;
+  }
+
+  .modal-submit-button {
+    padding: 17px 40px;
+    margin-top: 32px;
   }
 }
