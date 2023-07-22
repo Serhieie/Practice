@@ -13,21 +13,15 @@
   padding: 0 15px;
 }
 
-@media screen and (max-width: 409px) {
+@media screen and (max-width: 415px) {
   .container {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 416px) {
   .container {
-    width: 410px;
-  }
-}
-
-@media screen and (max-width: 549px) {
-  .container {
-    width: 100%;
+    width: 417px;
   }
 }
 
@@ -77,6 +71,8 @@ body {
   color: var(--dark);
   background-color: var(--white-milk);
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body.modal-open {
@@ -131,6 +127,7 @@ img {
 }
 
 .logo-link {
+  display: flex;
   text-transform: uppercase;
   color: var(--dark);
   font-size: 14px;
@@ -276,6 +273,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  width: 100%;
 }
 
 .navigation-wrapper,
@@ -485,13 +483,15 @@ section.hero {
   background-color: var(--white);
   border-radius: 50%;
   vertical-align: middle;
+  width: 28px;
+  height: 28px;
+  margin-left: 2px;
 
   transition: stroke 250ms linear, fill 250ms linear, background-color 250ms linear;
 }
 
 .hero-link-two:hover .scroll-down {
   fill: var(--white);
-  stroke: var(--white);
   background-color: var(--orange);
 }
 
@@ -510,6 +510,11 @@ section.hero {
   .hero-container {
     padding: 651px 40px 40px 40px;
     background-image: url(../adaptive-images/chocolate_main-tab-x1.jpg);
+  }
+
+  .hero-link-two .scroll-down {
+    width: 38px;
+    height: 38px;
   }
 }
 
@@ -646,6 +651,7 @@ section.hero {
   width: 1px;
   height: 124px;
   border-right: 1px solid rgba(255, 255, 255, 0.15);
+  display: none;
 }
 
 .discription-text-two::after {
@@ -724,6 +730,10 @@ section.hero {
   }
   .container {
     width: 1200px;
+  }
+
+  .discription-text-two::before {
+    display: block;
   }
 }
 
@@ -1759,7 +1769,7 @@ input[name="inputName"] {
 .privat-policy-text {
   position: relative;
   left: 10px;
-  max-width: 215px;
+  width: 215px;
   color: rgba(64, 64, 64, 0.6);
   font-size: 12px;
   line-height: 1.33;
@@ -1950,7 +1960,7 @@ input[name="inputName"] {
   }
 
   .modal-text {
-    max-width: 340px;
+    width: 340px;
     color: var(--dark);
     font-size: 24px;
     font-weight: 600;
