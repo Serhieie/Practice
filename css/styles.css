@@ -2029,6 +2029,10 @@ input[name="inputName"] {
     right: 24px;
   }
 
+  .comment {
+    margin-bottom: 26px;
+  }
+
   .comment-span {
     bottom: 308px;
     left: 64px;
