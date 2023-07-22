@@ -1791,13 +1791,12 @@ input[name="inputName"] {
 }
 
 .form-checkbox:checked + .privat-policy-text::before {
-  /* background-color: var(--orange); */
   background-image: url(../images/check.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-origin: border-box;
   background-size: contain;
-  border: transparent;
+  border: none;
 }
 
 .form-checkbox {
