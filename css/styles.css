@@ -1797,6 +1797,8 @@ input[name="inputName"] {
   background-origin: border-box;
   background-size: contain;
   border: none;
+  fill: var(--orange);
+  stroke: var(--white);
 }
 
 .form-checkbox {
