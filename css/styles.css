@@ -1659,6 +1659,7 @@ input[name="inputName"] {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 25px;
+  margin-left: 12px;
 }
 
 .modal-form {
