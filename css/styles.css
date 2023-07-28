@@ -1005,6 +1005,21 @@ section.hero {
   line-height: 18px;
   letter-spacing: -0.28px;
   padding-left: 16px;
+  list-style-type: none;
+}
+.how-its-made-list-item {
+  position: relative;
+}
+.how-its-made-list-item::before {
+  position: absolute;
+  content: "";
+  left: -16px;
+  top: 4px;
+  height: 10px;
+  width: 10px;
+  background-color: var(--grey);
+  border: 1px solid #eceded;
+  border-radius: 6px;
 }
 
 /* Section 4 @media */ /* Section 4 @media */ /* Section 4 @media */ /* Section 4 @media */ /* Section 4 @media */ /* Section 4 @media */
@@ -1065,6 +1080,12 @@ section.hero {
     flex-direction: column;
     padding: 32px;
     margin-left: 20px;
+  }
+
+  .bold-text {
+    font-size: 18px;
+    width: 400px;
+    margin-bottom: 28px;
   }
 }
 
