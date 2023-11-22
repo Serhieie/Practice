@@ -21,13 +21,13 @@
 
 @media screen and (min-width: 416px) {
   .container {
-    width: 417px;
+    max-width: 417px;
   }
 }
 
 @media screen and (min-width: 550px) {
   .container {
-    width: 550px;
+    max-width: 550px;
   }
 }
 
