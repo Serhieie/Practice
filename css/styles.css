@@ -30,7 +30,6 @@
   .container {
     width: 100%;
     min-width: 390px;
-    max-width: 550px;
   }
 }
 
@@ -642,6 +641,7 @@ section.hero {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   gap: 32px;
 }
 
