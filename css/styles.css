@@ -16,13 +16,13 @@
 @media screen and (max-width: 415px) {
   .container {
     width: 100%;
-    max-width: 360px;
   }
   .container-two {
-    .container {
-      width: 100%;
-      max-width: 380px;
-    }
+    width: 100%;
+    max-width: 380px;
+  }
+  .section-two {
+    padding: 16px;
   }
 }
 
