@@ -1091,6 +1091,12 @@ section.hero {
     width: 400px;
     margin-bottom: 28px;
   }
+  .how-its-made-video {
+    width: 614px;
+    height: 400px;
+    background-size: cover;
+    margin-bottom: 0px;
+  }
 }
 
 /* Section 5 */ /* Section 5 */ /* Section 5 */ /* Section 5 */ /* Section 5 */ /* Section 5 */ /* Section 5 */
