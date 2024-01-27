@@ -15,6 +15,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header" id="home">
@@ -409,23 +415,8 @@
               <svg class="icon icon-play" width="44" height="44">
                 <use xlink:href="./images/sprite.svg#icon-play"></use>
               </svg>
-
-              <picture>
-                <source
-                  srcset="
-                    ./adaptive-images/pastry-mobile-x1.jpg 1x,
-                    ./adaptive-images/pastry-mobile-x2.jpg 2x
-                  "
-                  media=" (max-width: 767px)"
-                />
-                <img
-                  class="how-its-made-video"
-                  src="./images/image.jpg"
-                  alt="men whick chocolate"
-                  width="600"
-                  height="400"
-                />
-              </picture>
+              <div  class="how-its-made-video" ><iframe      width="600"
+                  height="400" src="https://www.youtube.com/embed/pdXyq4L0GY8?si=joUmiS9svIHlBXkO&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
             </div>
             <div class="section-four-diplay-div">
               <b class="bold-text">
@@ -455,22 +446,24 @@
           </div>
         </div>
       </section>
+      
       <section class="section-five section">
-        <div class="container container-section-five">
+        <div class="container container-section-five">     
           <h2 class="two">Our <span class="orange-color">pRODUCTS</span></h2>
-          <ul class="list our-product-list">
-            <li class="our-product-list-items">
+          <div class="swiper">
+          <ul class=" our-product-list swiper-wrapper" style="height: 352px;">
+            <li class="our-product-list-items swiper-slide">
               <img
                 src="./images/img-1.jpg"
                 alt="chocolate in and out box"
                 width="230"
                 height="201"
               />
-              <h3 class="three section-five-three">orange</h3>
+              <h3 class="three section-five-three ">orange</h3>
               <p>Dark chocolate</p>
               <span class="price">45 UAH</span>
             </li>
-            <li class="our-product-list-items">
+            <li class="our-product-list-items swiper-slide">
               <img
                 src="./images/img-2.jpg"
                 alt="chocolate in and out box"
@@ -481,7 +474,7 @@
               <p>Milk chocolate</p>
               <span class="price">50 UAH</span>
             </li>
-            <li class="our-product-list-items">
+            <li class="our-product-list-items swiper-slide">
               <img
                 src="./images/img-3.jpg"
                 alt="chocolate in and out box"
@@ -492,7 +485,7 @@
               <p>Dark chocolate</p>
               <span class="price">66 UAH</span>
             </li>
-            <li class="our-product-list-items">
+            <li class="our-product-list-items swiper-slide">
               <img
                 src="./images/img-4.jpg"
                 alt="chocolate in and out box"
@@ -503,7 +496,7 @@
               <p>Dark chocolate</p>
               <span class="price">54 UAH</span>
             </li>
-            <li class="our-product-list-items">
+            <li class="our-product-list-items swiper-slide">
               <img
                 src="./images/img-5.jpg"
                 alt="chocolate in and out box"
@@ -514,7 +507,7 @@
               <p>Milk chocolate</p>
               <span class="price">45 UAH</span>
             </li>
-            <li class="our-product-list-items">
+            <li class="our-product-list-items swiper-slide">
               <img
                 src="./images/img-6.jpg"
                 alt="chocolate in and out box"
@@ -525,7 +518,7 @@
               <p>Milk chocolate</p>
               <span class="price">50 UAH</span>
             </li>
-            <li class="our-product-list-items">
+            <li class="our-product-list-items swiper-slide">
               <img
                 src="./images/img-7.jpg"
                 alt="chocolate in and out box"
@@ -536,7 +529,7 @@
               <p>Dark chocolate</p>
               <span class="price">66 UAH</span>
             </li>
-            <li class="our-product-list-items">
+            <li class="our-product-list-items swiper-slide">
               <img
                 src="./images/img-8.jpg"
                 alt="chocolate in and out box"
@@ -547,7 +540,10 @@
               <p>White chocolate</p>
               <span class="price">54 UAH</span>
             </li>
+            
           </ul>
+          <div class="swiper-pagination" ></div>
+         </div>         
         </div>
       </section>
       <section class="section-six section">
@@ -830,5 +826,34 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+       const swiper = new Swiper(".swiper", {
+  spaceBetween: 18,
+  slidesPerView: 1,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  loop: true,
+  mousewheel: {
+    enabled: true,
+    sensitivity: 1,
+  },
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+</script>
+
   </body>
 </html>

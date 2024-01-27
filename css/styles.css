@@ -1064,6 +1064,7 @@ section.hero {
 
 @media screen and (min-width: 1199px) {
   .container-section-four {
+    overflow: hidden;
     display: flex;
   }
   .icon-play {
@@ -1094,22 +1095,47 @@ section.hero {
 
 /* Section 5 */ /* Section 5 */ /* Section 5 */ /* Section 5 */ /* Section 5 */ /* Section 5 */ /* Section 5 */
 
-.our-product-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 22px;
-  justify-content: center;
+.swiper {
+  height: 410px;
+  margin: 0 auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+.swiper-pagination {
+  margin-top: 28px;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+span.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.9);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  background: var(--orange);
+  border-radius: 7px;
 }
 
 .our-product-list-items {
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  width: 335px;
-  height: 364px;
-  padding: 32px 52px;
+  padding-top: 28px;
   text-align: center;
   align-content: center;
   background-color: var(--white);
+}
+
+.our-product-list-items img {
+  margin: 0 auto;
 }
 
 .section-five-three {
@@ -1144,35 +1170,6 @@ section.hero {
 }
 
 /* Section 5 @ media */ /* Section 5 @ media */ /* Section 5 @ media */ /* Section 5 @ media */ /* Section 5 @ media */
-
-@media screen and (min-width: 767px) {
-  .our-product-list {
-    flex-direction: row;
-    gap: 32px;
-    row-gap: 32px;
-  }
-
-  .our-product-list-items {
-    width: calc((100%-32px) / 2);
-    width: 336px;
-    height: 364px;
-    padding: 32px 53px;
-  }
-}
-
-@media screen and (min-width: 1199px) {
-  .our-product-list {
-    gap: 18px;
-    row-gap: 24px;
-  }
-
-  .our-product-list-items {
-    width: calc((100%-54px) / 4);
-    width: 270px;
-    height: 364px;
-    padding: 32px 20px;
-  }
-}
 
 /* Section Six */ /* Section Six */ /* Section Six */ /* Section Six */ /* Section Six */ /* Section Six */
 
@@ -1212,6 +1209,12 @@ section.hero {
 }
 
 /* Section six @media */ /* Section six @media */ /* Section six @media */ /* Section six @media */
+
+.container-section-four iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
 
 @media screen and (min-width: 767px) {
   .top-sellers-list-items:not(:last-child) {
